@@ -1,9 +1,13 @@
 let str = document.getElementsByClassName("jock");
 
 
-function Rendom(){
-   str[0].innerHTML = a[generateRandom(60)];
-}
+// function Rendom(){
+//    str[0].innerHTML = a[generateRandom(60)];
+// }
+
+setInterval( function(){
+    str[0].innerHTML = a[generateRandom(60)];
+},2000)
 
 
 function generateRandom(maxLimit = 100){
